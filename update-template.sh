@@ -8,7 +8,7 @@
 REMOTE_NAAM="docent-template"
 UPSTREAM="https://github.com/apdekker93/php-template.git"
 BESTANDEN=(
-    ".devcontainer/devcontainer.json"
+    ".devcontainer/devcontainer.json"x  
     ".devcontainer/postCreateCommand.sh"
     ".devcontainer/postStartCommand.sh"
     "uitleg"
