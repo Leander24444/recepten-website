@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Broodje Döner</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+  background-color: #2f2f2f;
+  padding: 24px;
+  text-align: center;
+}
+
+.accent {
+  color: #B22222;
+}
+
+.sidebar {
+  background-color: #111;
+  min-height: 100vh;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #B22222;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.w3-button-accent {
+  background-color: #B22222;
+  color: white;
+}
+
+.w3-button-accent:hover {
+  background-color: #8B1A1A;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.w3-card-custom {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="w3-row">
+
+  <div class="w3-col l2 m3 w3-bar-block sidebar">
+    <h3 class="w3-center w3-padding accent">Menu</h3>
+    <a href="home.html" class="w3-bar-item w3-button">Home</a>
+    <a href="barbeque.html" class="w3-bar-item w3-button">Barbeque recepten</a>
+   <a href="uitgelogd.html" class="w3-bar-item w3-button">Uitloggen</a>
+  </div>
+
+ 
+  <div class="w3-col l10 m9 main-content">
+
+  
+    <div class="header w3-card">
+      <h1 class="accent">Broodje Döner</h1>
+      <p>Döner kebab (döner betekent 'draaiend' in het Turks) is een van oorsprong Turks vleesgerecht van gekruid lamsvlees. Soms worden ook andere vleessoorten gebruikt zoals kalfsvlees, kip of kalkoen.</p>
+    </div>
+
+    <div class="w3-card-custom">
+      <img src="Broodje-doner.png" style="width:100%;">
+      <p>De eigenlijke döner (Yaprak döner) bestaat uit een dikke, ronde staaf van afwisselende laagjes gekruid vlees en vet, die aan een braadspit zijn geregen. De staaf wordt verticaal draaiend in een staande grill verhit en gebakken. Daarna worden plakjes ervan afgesneden met een speciaal mes of een elektrisch snijapparaat. Vervolgens wordt de döner geserveerd, bijvoorbeeld als schotel met rijst of friet en sla, tomaat en ui, of als broodje of als dürüm. Ook wordt het geserveerd op Turkse pizza's.</p>
+      <img src="Döner.jpg" style="width:100%;">
+    </div>
+
+    <div class="w3-card-custom w3-margin-top">
+      <form class="w3-container" onsubmit="showSentPrompt(event)">
+        <label class="accent">Opmerking</label>
+        <input class="w3-input w3-margin-bottom" type="text" name="comment" placeholder="Typ hier je opmerking...">
+        <button type="submit" class="w3-button w3-button-accent">Verstuur</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function showSentPrompt(event) {
+  event.preventDefault(); // voorkomt dat de pagina herlaadt
+  alert("Je bericht is succesvol verstuurd! ✅");
+}
+</script>
+
+</body>
+</html>

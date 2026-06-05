@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbecue Recepten</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+  background-color: #2f2f2f;
+  padding: 24px;
+  text-align: center;
+}
+
+.accent {
+  color: #B22222;
+}
+
+.sidebar {
+  background-color: #111;
+  min-height: 100vh;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #B22222;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.w3-card-custom {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.w3-button-accent {
+  background-color: #B22222;
+  color: white;
+}
+
+.w3-button-accent:hover {
+  background-color: #8B1A1A;
+}
+</style>
+</head>
+
+<body>
+
+<div class="w3-row">
+
+  <div class="w3-col l2 m3 w3-bar-block sidebar">
+    <h3 class="w3-center w3-padding accent">Menu</h3>
+    <a href="home.html" class="w3-bar-item w3-button">Home</a>
+    <a href="broodje.html" class="w3-bar-item w3-button">Broodje Döner</a>
+   <a href="uitgelogd.html" class="w3-bar-item w3-button">Uitloggen</a>
+ </div>
+
+  <div class="w3-col l10 m9 main-content">
+
+   
+    <div class="header w3-card">
+      <h1 class="accent">De lekkerste Barbecue Recepten</h1>
+      <p>De lekkerste spareribs van de BBQ voor 4 personen</p>
+    </div>
+
+    <div class="w3-card-custom w3-margin-top">
+      <h2 class="accent">Ingrediënten kruidenmix</h2>
+      <p>
+        3 eetlepels grof zeezout<br>
+        3 eetlepels versgemalen zwarte peper<br>
+        2 eetlepels bruine basterdsuiker<br>
+        1 eetlepel gerookte paprikapoeder<br>
+        2 theelepels uienpoeder<br>
+        1/2 theelepel gemalen komijn<br>
+        1 theelepel gemalen koriander<br>
+        2 theelepels gemalen mosterdzaad<br>
+        1 theelepel gemalen venkelzaad
+      </p>
+
+      <h2 class="accent">Ingrediënten laksaus</h2>
+      <p>
+        200 ml appelsap<br>
+        100 ml ketchup<br>
+        100 ml tomatenpassata<br>
+        140 gram donkere basterdsuiker<br>
+        50 ml appelciderazijn<br>
+        2 eetlepels worcestershiresaus<br>
+        4 eetlepels balsamicoazijn<br>
+        2 eetlepels honing<br>
+        2 eetlepels sojasaus<br>
+        1 eetlepel mosterd<br>
+        1 eetlepel sambal<br>
+        1 theelepel versgemalen zwarte peper
+      </p>
+
+      <img src="rauwespareribs.jpg" style="width:100%;" alt="Rauwe spareribs">
+    </div>
+
+    <div class="w3-card-custom w3-margin-top">
+      <h2 class="accent">Voorbereiding</h2>
+      <p>
+        Haal de spareribs twee dagen voor bereiding uit de vriezer en laat langzaam ontdooien in de koeling.
+        Meng alle ingrediënten voor de kruidenmix. De hoeveelheid is voldoende voor twee spareribs.
+        Haal de spareribs een dag voor bereiding uit de koeling, verwijder de verpakking en dep droog.
+        Verwijder het vlies aan de achterzijde en wrijf de spareribs in met de kruidenmix. Pak ze in met vershoudfolie en leg terug in de koeling tot de volgende dag.
+      </p>
+
+      <h2 class="accent">Bereiding laksaus</h2>
+      <p>
+        Voeg alle ingrediënten in een pan, breng langzaam aan de kook en roer tot de suiker is opgelost.
+        Laat de saus rustig inkoken tot de gewenste dikte (10–15 minuten). Gebruik direct of laat afkoelen.
+      </p>
+
+      <h2 class="accent">Bereiding spareribs op de BBQ</h2>
+      <p>
+        Bereid de BBQ met houtskool en rookhout. Plaats de plate setters en leg de spareribs op het rooster bij ca. 120°C.
+        Sluit de deksel voor 3 uur en houd de temperatuur constant. Pak de spareribs daarna in met aluminiumfolie en een beetje appelsap voor 1,5–2 uur stomen.
+        Wrijf ze vervolgens in met de laksaus elke 15 minuten tot de gewenste gaarheid.
+      </p>
+
+      <img src="gegrildespareribs.jpg" style="width:100%;" alt="Gegrilde spareribs">
+
+      <div class="w3-margin-top">
+        <form onsubmit="showSentPrompt(event)" class="w3-container">
+          <label class="accent">Opmerking</label>
+          <input class="w3-input w3-margin-bottom" type="text" name="comment" placeholder="Typ hier je opmerking...">
+          <button type="submit" class="w3-button w3-button-accent">Verstuur</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function showSentPrompt(event) {
+  event.preventDefault(); // voorkomt dat de pagina herlaadt
+  alert("Je bericht is succesvol verstuurd! ✅");
+}
+</script>
+
+</body>
+</html>

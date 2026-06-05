@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receptenboek</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+  background-color: #2f2f2f;
+  padding: 24px;
+  text-align: center;
+}
+
+.accent {
+  color: #B22222;
+}
+
+.sidebar {
+  background-color: #111;
+  min-height: 100vh;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #B22222;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.w3-button-accent {
+  background-color: #B22222;
+  color: white;
+}
+
+.w3-button-accent:hover {
+  background-color: #8B1A1A;
+}
+
+.mySlides {
+  display: none;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="w3-row">
+
+  <div class="w3-col l2 m3 w3-bar-block sidebar">
+    <h3 class="w3-center w3-padding accent">Menu</h3>
+    <a href="broodje.html" class="w3-bar-item w3-button">Broodje Döner</a>
+    <a href="barbeque.html" class="w3-bar-item w3-button">Barbeque recepten</a>
+   <a href="uitgelogd.html" class="w3-bar-item w3-button">Uitloggen</a>
+  </div>
+
+  
+  <div class="w3-col l10 m9 main-content">
+
+    
+    <div class="header w3-card">
+      <h1 class="accent">Receptenboek</h1>
+      <p>Welkom op onze website! Vind hier de lekkerste gerechten: vlees, pasta en Hollandse klassiekers. </p>
+    </div>
+
+    <h2 class="w3-center accent w3-margin-top">Eten en drinken</h2>
+    <div class="w3-content w3-display-container w3-margin-top">
+      <img class="mySlides" src="broodje-doner.png" style="width:90%">
+      <img class="mySlides" src="hertog jan.jpg" style="width:90%">
+
+      <button class="w3-button w3-button-accent w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-button-accent w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
